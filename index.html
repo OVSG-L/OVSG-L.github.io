@@ -128,8 +128,7 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
-                <!-- FIXME: Upload video to YouTube -->
+              <!-- <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -137,7 +136,7 @@
                   </span>
                   <span>Video (Coming Soon!)</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/changhaonan/OVSG"
@@ -170,20 +169,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <!-- FIXME: Add the teaser video -->
-        <source src="./static/videos/ovsg-nav.mp4"
+      <video id="spotlight" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/ovsg-spotlight.mp4"
                 type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered" style="color: #D65E01 !important;;">
-        The ROSMASTER R2 Ackermann Steering Robot, equipped with an Astra Pro Plus Depth Camera, YDLidar TG 2D lidar sensor, IMU, and wheel encoder.
-      </h2>
-      <div class="content has-text-justified">
-        <p>
-          We generated a comprehensive map using an Intel RealSense D455 camera and ORB-SLAM3, which fed into the Open-vocabulary pipeline, and utilized the Robot Operating System (ROS) Navigation stack with the TEB planner for goal-oriented navigation. 
-          For real-world navigation testing with OVSG, a language-based object navigation task was designed, featuring seven objects in a laboratory, each paired with three queries.
-        </p>
-      </div>
     </div>
   </div>
 </section>
@@ -431,20 +420,42 @@
           </div>
           </div>
           </section>
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <h3 class="title is-3">
+      Navigation
+      </h3>
     <div class="hero-body">
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%" style="background-position: center;">
-        <source src="./static/videos/ovsg-manip.mp4"
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/ovsg-nav.mp4"
                 type="video/mp4">
-      </video> -->
-      <video id="teaser" autoplay muted loop playsinline height="100%" style="display: block; margin: auto; background-position: center;">
+      </video>
+      <h2 class="subtitle has-text-centered" style="color: #D65E01 !important;;">
+        The ROSMASTER R2 Ackermann Steering Robot, equipped with an Astra Pro Plus Depth Camera, YDLidar TG 2D lidar sensor, IMU, and wheel encoder.
+      </h2>
+      <div class="content has-text-justified">
+        <p>
+          We generated a comprehensive map using an Intel RealSense D455 camera and ORB-SLAM3, which fed into the Open-vocabulary pipeline, and utilized the Robot Operating System (ROS) Navigation stack with the TEB planner for goal-oriented navigation. 
+          For real-world navigation testing with OVSG, a language-based object navigation task was designed, featuring seven objects in a laboratory, each paired with three queries.
+        </p>
+      </div>
+    <!-- </div>
+  </div> -->
+<!-- </section>
+          
+<section class="hero teaser"> -->
+  <!-- <div class="container is-max-desktop">
+    <div class="hero-body"> -->
+      <h3 class="title is-3">
+        Manipulation
+        </h3>
+      <video id="teaser2" autoplay muted loop playsinline height="100%" style="display: block; margin: auto; background-position: center;">
         <source src="./static/videos/ovsg-manip.mp4" type="video/mp4">
     </video>
     
       <h2 class="subtitle has-text-centered" style="color: #D65E01 !important;;">
         Utility of OVSG in real-world manipulation scenarios on a complex pick-and-place task.
-        <!-- The OVSG-L model, as showcased in a pick-and-place experiment with identical blocks, notably improves object grounding accuracy in complex manipulation tasks, outperforming OVIR-3D and emphasizing its promising application in robotics. -->
       </h2>
       <div class="content has-text-justified">
         <p>
