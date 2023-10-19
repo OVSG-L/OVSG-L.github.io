@@ -293,8 +293,19 @@
         <h2 class="title is-3">
           <span class="dovsg">Open Vocabulary 𝟑d Scene Graph</span> (OVSG)
 
+        <h3 class="title is-4">Backbone of our system: OVIR-3D</h3>
+        <img src="./static/images/ovir.png" class="interpolation-image" alt="OVIR-3D">
+        <div class="content has-text-justified">
+          <p>
+            At the core of our system lies <span class="dovsg">Open-Vocabulary 3D Instance Retrieval</span>(OVIR-3D). 
+            Given a 3D scan reconstructed from an RGB-D video and a text query, the proposed method retrieves relevant 3D instances (see examples a-c).
+            Notably, instances that aren't even part of the original annotations can be detected (see examples d-e), such as the cushions on the sofa.
+          </p>
+          
+        </div>
+
         <!-- Interpolating. -->
-        <h3 class="title is-4">Pipeline</h3>
+        <h3 class="title is-4">Our Pipeline</h3>
         <img src="./static/images/ovsg-pipeline.png" class="interpolation-image" alt="OVSG Pipeline">
         <div class="content has-text-justified">
           <p>
@@ -614,6 +625,9 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
+
+    <h5>If you find our work useful, consider citing:</h5>
+    <h5>OVSG</h5>
     <pre><code>@inproceedings{
       chang2023contextaware,
       title={Context-Aware Entity Grounding with Open-Vocabulary 3D Scene Graphs},
@@ -622,6 +636,15 @@
       year={2023},
       url={https://openreview.net/forum?id=cjEI5qXoT0}
       }</code></pre>
+      <h5>OVIR-3D</h5>
+      <pre><code>@inproceedings{
+        lu2023ovird,
+        title={{OVIR}-3D: Open-Vocabulary 3D Instance Retrieval Without Training on 3D Data},
+        author={Shiyang Lu and Haonan Chang and Eric Pu Jing and Abdeslam Boularias and Kostas Bekris},
+        booktitle={7th Annual Conference on Robot Learning},
+        year={2023},
+        url={https://openreview.net/forum?id=gVBvtRqU1_}
+        }</code></pre>
   </div>
 </section>
 
